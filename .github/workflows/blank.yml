@@ -19,7 +19,7 @@ jobs:
       - name: Build
         run: gradle assembleDebug --no-daemon
       - name: Rename
-        run: cp app/build/outputs/apk/debug/app-debug.apk BillingSoftware.apk
+          run: cp BillingApp/app/build/outputs/apk/debug/app-debug.apk BillingSoftware.apk
       - uses: actions/upload-artifact@v4
         with:
           name: BillingSoftware-apk
